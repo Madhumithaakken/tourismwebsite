@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+<style>
+
+.gogago-logo {
+  width: 80px;
+  height: 70px;
+}
+#navItem1 {
+  color: #323f4b;
+  font-family: "Roboto";
+}
+#navItem2 {
+  color: #323f4b;
+  font-family: "Roboto";
+}
+#navItem3 {
+  color: #323f4b;
+  font-family: "Roboto";
+}
+#navItem4 {
+  color: #323f4b;
+  font-family: "Roboto";
+}
+.banner-section-bg-container {
+  background-image: url("https://wallpapercave.com/wp/wp3067500.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+.banner-heading {
+  color: white;
+  font-family: "Roboto";
+  font-size: 45px;
+  font-weight: 300;
+}
+.banner-caption {
+  color: #f5f7fa;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 300;
+}
+.custom-button {
+  color: white;
+  background-color: #d0b200;
+  width: 130px;
+  height: 45px;
+  border-width: 0;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+.custom-outline-button {
+  color: #d0b200;
+  background-color: transparent;
+  width: 130px;
+  height: 45px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d0b200;
+  border-radius: 8px;
+}
+.wcu-section {
+  background-color: #f9fbfe;
+}
+.wcu-section-heading {
+  color: #183b56;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+}
+.wcu-section-description {
+  color: #5a7184;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+.wcu-card {
+  text-align: center;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e5eaf4;
+  border-radius: 5px;
+}
+.wcu-card-image {
+  width: 87px;
+  height: 90px;
+}
+.wcu-card-title {
+  color: #323f4b;
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 500;
+}
+.wcu-card-description {
+  color: #7b8794;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+.offers {
+  color: #323f4b;
+  font-style: italic;
+  font-weight: 600;
+}
+.explore-menu-section {
+  background-color: white;
+}
+.menu-section-heading {
+  color: #183b56;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+}
+.menu-item-image {
+  border-radius: 16px;
+}
+.menu-card-title {
+  color: #323f4b;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 24px;
+}
+.menu-item-link {
+  color: #d0b200;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+}
+.menu-item-card {
+  border-radius: 16px;
+}
+.healthy-food-section {
+  background-color: #f9fbfe;
+}
+.healthy-food-section-img {
+  width: 270px;
+}
+.healthy-food-section-heading {
+  color: #183b56;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+}
+.healthy-food-section-description {
+  color: #5a7184;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+.delivery-and-payment-section {
+  background-color: white;
+}
+.delivery-and-payment-section-img {
+  width: 270px;
+}
+.delivery-and-payment-section-heading {
+  color: #183b56;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+}
+.delivery-and-payment-section-description {
+  color: #5a7184;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+.payment-card-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 28px;
+}
+.thanking-customers-section {
+  background-color: #d0b2001a;
+}
+.thanking-customers-section-heading {
+  color: #183b56;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+}
+.thanking-customers-section-description {
+  color: #5a7184;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+.thanking-customers-section-img {
+  width: 270px;
+  margin-bottom: 20px;
+}
+.follow-us-section {
+  background-color: white;
+}
+.follow-us-section-heading {
+  text-align: center;
+  color: #183b56;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+}
+.follow-us-icon-container {
+  background-color: #faf7e8;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  margin: 15px;
+  padding-top: 22px;
+  padding-bottom: 14px;
+  padding-right: 16px;
+  padding-left: 22px;
+}
+.icon {
+  color: #d0b200;
+  font-size: 35px;
+}
+.footer-section {
+  background-color: #0d2436;
+}
+.footer-section-mail-id {
+  color: #959ead;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.footer-section-address {
+  color: #959ead;
+  font-family: "Roboto";
+  font-size: 14px;
+}
+</style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://play-lh.googleusercontent.com/FIvp_hqBxo1WXMWrRXSvTJ-1q-P4ZBd9ojWYsOq9VqRPeyd8_TjN05JVlEvf2FDsCXw"
+            class="gogago-logo"
+          />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link active" id="navItem1" href="#exploreMenuSection">
+              Holiday Packages
+              <span class="sr-only">(current)</span>
+            </a>
+            <a class="nav-link" href="#wcuSection" id="navItem2">Flights</a>
+            <a class="nav-link" href="#HotelBookingSection" id="navItem3">Hotels</a>
+            <a class="nav-link" href="#PackageCollectionSection" id="navItem4">Package Collections</a>
+            <a class="nav-link" href="#followUsSection" id="navItem4">Follow Us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="banner-section-bg-container d-flex justify-content-center flex-column">
+      <div class="text-center">
+        <h1 class="banner-heading mb-3">It's time for new Experiences</h1>
+        <p class="banner-caption mb-4">Your gateway to unforgettable adventures</p>
+        
+      </div>
+    </div>
+ <div class="explore-menu-section pt-5 pb-5" id="exploreMenuSection">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="menu-section-heading">Package By Interest</h1>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="shadow menu-item-card p-3 mb-3">
+              <img
+                src="https://www.tourmyindia.com/tmimg/delhi-package.webp"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Delhi</h1>
+              <a href="https://www.tourmyindia.com/packages-tour-india/delhi-tours/" class="menu-item-link">
+                View More
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="shadow menu-item-card p-3 mb-3">
+              <img
+                src="https://www.tourmyindia.com/tmimg/up-package.webp"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Uttar Pradesh</h1>
+              <a href="https://www.tourmyindia.com/packages-tour-india/uttar-pradesh-tours/" class="menu-item-link">
+                View More
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+              <img
+                src="https://www.tourmyindia.com/tmimg/uttarakhand01-package.webp"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Uttarakhand</h1>
+              <a href="https://www.tourmyindia.com/packages-tour-india/hill-stations/uttarakhand-hill-stations-tours.html" class="menu-item-link">
+                View More
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+              <img
+                src="https://www.tourmyindia.com/tmimg/himachal-package.webp"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Himachal Pradesh</h1>
+              <a href="https://www.tourmyindia.com/packages-tour-india/hill-stations/himachal-hill-stations-tours.html" class="menu-item-link">
+                View More
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+              <img
+                src="https://www.tourmyindia.com/tmimg/ladakh-trend.webp"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Ladakh</h1>
+              <a href="https://www.tourmyindia.com/states/ladakh/ladakh-tour-packages.html" class="menu-item-link">
+                View More
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+              <img
+                src="https://www.tourmyindia.com/tmimg/kerala-package.webp"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Kerala</h1>
+              <a href="https://www.tourmyindia.com/packages-tour-india/kerala-travel-packages/" class="menu-item-link">
+                View More
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+              <img
+                src="https://www.tourmyindia.com/tmimg/puducherry-package.webp"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Puducherry</h1>
+              <a href="https://www.tourmyindia.com/packages-tour-india/puducherry-tours/" class="menu-item-link">
+                View More
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+              <img
+                src="https://www.tourmyindia.com/tmimg/sikkim-package.webp"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Sikkim</h1>
+              <a href="https://www.tourmyindia.com/states/sikkim/sikkim-tour-packages.html" class="menu-item-link">
+                View More
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+ <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+              <img
+                src="https://www.tourmyindia.com/tmimg/daman&diu-package.webp"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Daman & Diu</h1>
+              <a href="https://www.tourmyindia.com/packages-tour-india/daman-diu-tours/" class="menu-item-link">
+                View More
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+ <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+              <img
+                src="https://www.tourmyindia.com/tmimg/gujarat-package.webp"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Gujarat</h1>
+              <a href="https://www.tourmyindia.com/packages-tour-india/gujarat-tours/" class="menu-item-link">
+                View More
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+ <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+              <img
+                src="https://www.tourmyindia.com/tmimg/arunachal-package.webp"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Arunachal</h1>
+              <a href="https://www.tourmyindia.com/packages-tour-india/arunachal-tours/" class="menu-item-link">
+                View More
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+ <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+              <img
+                src="https://www.tourmyindia.com/tmimg/andaman-package.webp"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Andaman</h1>
+              <a href="https://www.tourmyindia.com/states/andaman/holiday-packages.html" class="menu-item-link">
+                View More
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wcu-section pt-5 pb-5" id="wcuSection">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="wcu-section-heading">Flights</h1>
+            <p class="wcu-section-description">
+              Do not wait because the adventure awaits.
+            </p>
+          </div>
+ <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-5">
+            <div class="text-center">
+              <img
+                src="https://wallpaperaccess.com/full/254367.png"
+                class="healthy-food-section-img"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-7">
+           
+            <p class="healthy-food-section-description">
+             Book your flights with ease through Tour My India's convenient booking platform. Explore a variety of airlines and routes to find the best options for your journey. With our user-friendly interface and responsive customer support, planning your trip has never been easier. Trust Tour My India for a seamless flight booking experience.
+            </p>
+            
+<button class="custom-button" 
+
+    onclick="window.location.href = 'https://www.makemytrip.com/';"> 
+
+        View Flights
+
+    </button>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+<div class="wcu-section pt-5 pb-5" id="HotelBookingSection">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="wcu-section-heading">Hotels</h1>
+            <p class="wcu-section-description">
+              Make yourself at home
+            </p>
+          </div>
+ <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-5">
+            <div class="text-center">
+              <img
+                src="https://tse3.mm.bing.net/th?id=OIP.kCS1cDiOsRALChyrTbS1yAHaEW&pid=Api&P=0&h=180"
+                class="healthy-food-section-img"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-7">
+           
+            <p class="healthy-food-section-description">
+              Experience seamless hotel booking with Tour My India. Choose from a wide range of hotels, resorts, and guesthouses tailored to your preferences and budget. With our user-friendly platform and dedicated customer support, finding and booking your ideal accommodation is quick and hassle-free.
+            </p>
+            
+<button class="custom-button" 
+
+    onclick="window.location.href = 'https://www.agoda.com/';"> 
+
+        View Hotels
+
+    </button>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="delivery-and-payment-section pt-5 pb-5" id="deliveryPaymentSection">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-5 order-1 order-md-2">
+            <div class="text-center">
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/delivery-payment-section-img.png"
+                class="delivery-and-payment-section-img"
+              />
+            </div>
+          </div>
+<div class="explore-menu-section pt-5 pb-5" id="PackageCollectionSection">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="menu-section-heading">Package Collections</h1>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="shadow menu-item-card p-3 mb-3">
+              <img
+                src="https://www.tourmyindia.com/tmimg/delhi-package.webp"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Delhi</h1>
+              <a href="" class="menu-item-link">
+                View All
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="shadow menu-item-card p-3 mb-3">
+              <img
+                src="https://www.tourmyindia.com/tmimg/up-package.webp"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Uttar Pradesh</h1>
+              <a href="" class="menu-item-link">
+                View All
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+              <img
+                src="https://www.tourmyindia.com/tmimg/uttarakhand01-package.webp"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Uttarakhand</h1>
+              <a href="" class="menu-item-link">
+                View All
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+              <img
+                src="https://www.tourmyindia.com/tmimg/himachal-package.webp"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Himachal Pradesh</h1>
+              <a href="" class="menu-item-link">
+                View All
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+              <img
+                src="https://www.tourmyindia.com/tmimg/ladakh-trend.webp"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Ladakh</h1>
+              <a href="" class="menu-item-link">
+                View All
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+              <img
+                src="https://www.tourmyindia.com/tmimg/kerala-package.webp"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Kerala</h1>
+              <a href="" class="menu-item-link">
+                View All
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+              <img
+                src="https://www.tourmyindia.com/tmimg/puducherry-package.webp"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Puducherry</h1>
+              <a href="" class="menu-item-link">
+                View All
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+              <img
+                src="https://www.tourmyindia.com/tmimg/sikkim-package.webp"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Sikkim</h1>
+              <a href="" class="menu-item-link">
+                View All
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+ <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+              <img
+                src="https://www.tourmyindia.com/tmimg/daman&diu-package.webp"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Daman & Diu</h1>
+              <a href="" class="menu-item-link">
+                View All
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+ <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+              <img
+                src="https://www.tourmyindia.com/tmimg/gujarat-package.webp"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Gujarat</h1>
+              <a href="" class="menu-item-link">
+                View All
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+ <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+              <img
+                src="https://www.tourmyindia.com/tmimg/arunachal-package.webp"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Arunachal</h1>
+              <a href="" class="menu-item-link">
+                View All
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+ <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+              <img
+                src="https://www.tourmyindia.com/tmimg/andaman-package.webp"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Andaman</h1>
+              <a href="" class="menu-item-link">
+                View All
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+          <div class="col-12 col-md-7 order-2 order-md-1">
+            <h1 class="delivery-and-payment-section-heading">
+              Delivery and Payment
+            </h1>
+            <p class="delivery-and-payment-section-description">
+              Enjoy hassle-free payment with the plenitude of payment options
+              available for you. Get live tracking and locate your hotels on a
+              live map. It's quite a sight to see your hotels accordingly.
+              Plus, you get a 5% discount on every order every time you pay
+              online.
+            </p>
+            <button class="custom-button">Book Now</button>
+            <div class="mt-3">
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png"
+                class="payment-card-img"
+              />
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/master-card-img.png"
+                class="payment-card-img"
+              />
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/paypal-card-img.png"
+                class="payment-card-img"
+              />
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/american-express-img.png"
+                class="payment-card-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="thanking-customers-section pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
+            <h1 class="thanking-customers-section-heading">
+              Thank you for being a valuable customer to us.
+            </h1>
+            <p class="thanking-customers-section-description">
+              We have a surprise gift for you
+            </p>
+            <div class="d-md-none">
+              <img
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png"
+                class="thanking-customers-section-img"
+              />
+            </div>
+            <div>
+              <button type="button" class="custom-button" data-toggle="modal" data-target="#exampleModal">
+                Redeem Gift
+              </button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog mt-5">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title thanking-customers-section-modal-title" id="exampleModalLabel">
+                        Gift Voucher
+                      </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/gift-voucher-img.png"
+                        class="w-100"
+                      />
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-5 d-none d-md-block">
+            <img
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png"
+              class="thanking-customers-section-img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <div class="follow-us-section pt-5 pb-5" id="followUsSection">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="follow-us-section-heading">Follow Us</h1>
+          </div>
+          <div class="col-12">
+            <div class="d-flex flex-row justify-content-center">
+              <div class="follow-us-icon-container">
+                <i class="fab fa-twitter icon"></i>
+              </div>
+              <div class="follow-us-icon-container">
+                <i class="fab fa-instagram icon"></i>
+              </div>
+              <div class="follow-us-icon-container">
+                <i class="fab fa-facebook icon"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-section pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <img
+              src="https://play-lh.googleusercontent.com/FIvp_hqBxo1WXMWrRXSvTJ-1q-P4ZBd9ojWYsOq9VqRPeyd8_TjN05JVlEvf2FDsCXw"
+              class="gogago-logo"
+            />
+            <h1 class="footer-section-mail-id">tourism@gogago.com</h1>
+            <p class="footer-section-address">
+              Gogaga Holidays Private Limited
+406 & 408, 4th Floor, Block-2, Whitehouse, Begumpet-500016, Hyderabad
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
